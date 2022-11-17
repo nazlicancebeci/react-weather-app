@@ -1,16 +1,12 @@
 .App {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
 }
 .App .container {
-  max-width: 600px;
+  width: 400px;
+  display: block;
   margin: 10px auto;
-  padding: 30px 40px 20px 40px;
+  padding: 20px 10px;
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 2px 2px 5px rgb(205, 204, 204);
