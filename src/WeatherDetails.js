@@ -16,10 +16,8 @@ export default function WeatherDetails() {
       <h1 id="city"> {weatherData.city} </h1>
       <h2>{weatherData.date}</h2>
       <h3 id="description">{weatherData.description}</h3>
-
       <div className="row">
-        <div className="col-8 today-weather">
-          <span>
+        <div className="col-6 today-weather">
             <img
               src={weatherData.img}
               id="icon"
@@ -27,37 +25,9 @@ export default function WeatherDetails() {
               width="50"
               className="weather-icon"
             />
-          </span>
-          <strong className="temperature" id="temperature"></strong>
-          <span
-            className="btn-group"
-            role="group"
-            aria-label="Basic radio toggle button group"
-          >
-            <input
-              type="radio"
-              className="btn-check"
-              name="btnradio"
-              id="btnradio1"
-              autocomplete="off"
-              checked
-            />
-            <label className="btn btn-outline-primary btn-sm" for="btnradio1">
-              {weatherData.temperature}°C
-            </label>
-            <input
-              type="radio"
-              className="btn-check"
-              name="btnradio"
-              id="btnradio2"
-              autocomplete="off"
-            />
-            <label className="btn btn-outline-primary btn-sm" for="btnradio2">
-              °F
-            </label>
-          </span>
+            {""} 10°C
         </div>
-        <div className="col-3 today-weather-details">
+        <div className="col-6 today-weather-details">
           Humidity: <span id="humidity">{weatherData.humidity}</span>%<br />
           Wind: <span id="wind">{weatherData.wind}</span> km/h
         </div>

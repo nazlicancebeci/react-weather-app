@@ -10,10 +10,5 @@ h3 {
 }
 .temperature {
   color: #3f3f3f;
-  font-size: 60px;
-  margin-right: 10px;
-}
-.today-weather-details {
-  margin-top: 50px;
-  font-size: 12px;
+  font-size: 50px;
 }

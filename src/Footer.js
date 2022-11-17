@@ -11,7 +11,7 @@ export default function Footer() {
         class="open-source"
       >
         {" "}
-        Open-source code
+        Open-sourced code on GitHub
       </a>
       , by{" "}
       <a href="https://www.linkedin.com/in/nazlican-cebeci/">Nazlican Cebeci</a>
