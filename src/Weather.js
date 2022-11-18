@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import WeatherDetails from "./WeatherDetails";
-import axios from "axios";
 import "./Weather.css";
-
+import axios from "axios";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -16,7 +15,7 @@ export default function Weather(props) {
       icon: response.data.weather[0].icon,
       humidity: response.data.main.humidity,
       description: response.data.weather[0].main,
-      city: response.data.name
+      city: response.data.name,
     });
   }
 
@@ -26,14 +25,14 @@ export default function Weather(props) {
     axios.get(apiUrl).then(handleResponse);
   }
 
-function handleSubmit(event) {
-  event.preventDefault();
-  search();
-}
+  function handleSubmit(event) {
+    event.preventDefault();
+    search();
+  }
 
-function handleCitySearch(event) {
-setCity(event.target.value);
-}
+  function handleCitySearch(event) {
+    setCity(event.target.value);
+  }
   if (weatherData.ready) {
     return (
       <div className="Weather">
