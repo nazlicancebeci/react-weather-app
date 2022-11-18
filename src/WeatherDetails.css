@@ -1,4 +1,11 @@
 
+.Weather {
+    padding: 5px;
+margin: auto;
+}
+form {
+    margin-bottom: 20px;
+}
 h1 {
   font-size: 36px;
   font-weight: bold;
