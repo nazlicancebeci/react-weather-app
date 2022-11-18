@@ -14,23 +14,23 @@ export default function WeatherDetails() {
   return (
     <div className="today-body">
       <h1 id="city"> {weatherData.city} </h1>
-      <h2>{weatherData.date}</h2>
-      <h3 id="description">{weatherData.description}</h3>
+      <h3>{weatherData.date}</h3>
+      <img
+        src={weatherData.img}
+        id="icon"
+        alt="clear sky"
+        width="50"
+        className="weather-icon"
+      />
+      <h2>
+        <span className="temperature">10</span><span className="unit">°C</span>
+      </h2>
+      <h4 id="description">{weatherData.description}</h4>
       <div className="row">
-        <div className="col-6 today-weather">
-            <img
-              src={weatherData.img}
-              id="icon"
-              alt="clear sky"
-              width="50"
-              className="weather-icon"
-            />
-            {""} 10°C
+        <div className="col-6 humidity">
+          Humidity: {weatherData.humidity}%<br />
         </div>
-        <div className="col-6 today-weather-details">
-          Humidity: <span id="humidity">{weatherData.humidity}</span>%<br />
-          Wind: <span id="wind">{weatherData.wind}</span> km/h
-        </div>
+        <div className="col-6 wind"> Wind: {weatherData.wind} km/h</div>
       </div>
     </div>
   );
