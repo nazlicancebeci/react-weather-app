@@ -10,7 +10,7 @@ export default function WeatherDetails(props) {
       <h3>
         <FormattedDate date={props.data.date} />
       </h3>
-   <WeatherIcon code={props.data.icon} alt={props.data.description} />
+   <WeatherIcon code={props.data.icon} />
       <h2>
         <span className="temperature"> {props.data.temperature} </span>
         <span className="unit">°C</span>
