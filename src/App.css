@@ -3,11 +3,11 @@
   text-align: center;
 color: #5a5a5a;}
 .App .container {
-  width: 400px;
+  width: 350px;
   display: block;
   margin: 10px auto;
   padding: 20px 10px;
-  background-color: #ffffff;
+  background-color:  #9fd3c7;
   border-radius: 10px;
   box-shadow: 2px 2px 5px rgb(205, 204, 204);
   border: 0.5px;
